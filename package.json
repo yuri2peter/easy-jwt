@@ -1,0 +1,30 @@
+{
+  "name": "@yuri2/easy-jwt",
+  "version": "1.0.0",
+  "description": "生成、解析url格式友好的jwt token。",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "echo \"Error: no start specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuri2peter/easy-jwt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuri2peter/easy-jwt/issues"
+  },
+  "homepage": "https://github.com/yuri2peter/easy-jwt#readme",
+  "dependencies": {
+    "base64url": "^3.0.1",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "prettier": "^1.18.2",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1"
+  }
+}
