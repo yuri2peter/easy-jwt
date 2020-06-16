@@ -74,14 +74,14 @@ ogAOgXACaIqiFyrk3wIDAQAB
   // Make a jwt token.
   const token = jwt.signRSA(payload, privateKey, 3);
   console.log('token:', token);
-  // print: eyJwIjoiSGVsbG8sIHdvcmxkISIsImUiOjE1OTE4NDk3Mzc4OTgsInMiOiI2NDliMjdiMTNlZTAxOGU0YWEyODcxNDY5NTQwMTc5YiJ9
+  // print: eyJwIjoiSGVsbG8sIHdvcmxkISIsImUiOjE1OTIyNzYyODMyMDUsInMiOiJ3SnVieG11VnVGZDZCZ2oyNFpncVpMWXBsOUktMG1TUkZ5U1B2ZWJackc3UDlCU3p1bmlwTTB1c01TY1J3b1ZKSTR6UUprTWtGdGNrSENLa1kzM2k1dkVwWXo3ZlNZLVZhcW51MWhob1dEUEJ4TXMtV0lNYVFwRl9FOGcyczBUS1hXbGl5S2FDSmVRRGZ4X0x1NFRKWk9VY3c5ZTZJMG9BTUxjZmdWTnljWDgifQ
 
   // Decodes without secret
   const decodedPayload = jwt.decode(token);
   console.log('Decoded Payload:', decodedPayload); // print: Hello, world!
   const decodedBody = jwt.decode(token, true);
   console.log('Decoded Body:\n', decodedBody);
-  // print: { p:'Hello, world!', e:1591849737898 ,s:'649b27b13ee018e4aa2871469540179b' }
+  // print: { p:'Hello, world!', e:1591849737898 ,s:'wJubxmuVuFd6Bgj24ZgqZLYpl9I-0mSRFySPvebZrG7P9BSzunipM0usMScRwoVJI4zQJkMkFtckHCKkY33i5vEpYz7fSY-Vaqnu1hhoWDPBxMs-WIMaQpF_E8g2s0TKXWliyKaCJeQDfx_Lu4TJZOUcw9e6I0oAMLcfgVNycX8' }
 
   // Verifies
   console.log(
